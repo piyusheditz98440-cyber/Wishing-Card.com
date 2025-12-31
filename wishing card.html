@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year 2026</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #020024, #090979, #000);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* Background stars */
+.star {
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    animation: float 10s linear infinite;
+}
+
+.star:nth-child(1) { left: 10%; animation-delay: 0s; }
+.star:nth-child(2) { left: 30%; animation-delay: 2s; }
+.star:nth-child(3) { left: 50%; animation-delay: 4s; }
+.star:nth-child(4) { left: 70%; animation-delay: 1s; }
+.star:nth-child(5) { left: 90%; animation-delay: 3s; }
+
+@keyframes float {
+    from { top: 100%; opacity: 1; }
+    to { top: -10%; opacity: 0; }
+}
+
+/* Main card */
+.card {
+    max-width: 900px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 25px;
+    padding: 50px;
+    box-shadow: 0 0 50px rgba(255,200,0,0.4);
+    text-align: center;
+    animation: zoomIn 1.8s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Header */
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    text-shadow: 0 0 25px gold;
+}
+
+.year {
+    font-size: 5.5rem;
+    margin: 15px 0;
+    font-weight: bold;
+    background: linear-gradient(90deg, gold, orange, gold);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+    to { background-position: 200%; }
+}
+
+/* Content sections */
+.section {
+    margin-top: 35px;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.08);
+}
+
+.section h2 {
+    margin-bottom: 12px;
+    color: #ffcc00;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Footer */
+footer {
+    margin-top: 35px;
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    h1 { font-size: 2.3rem; }
+    .year { font-size: 4rem; }
+    .card { padding: 30px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Stars -->
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+
+<!-- Main Card -->
+<div class="card">
+
+    <h1>🎆 Happy New Year 🎆</h1>
+    <div class="year">2026</div>
+
+    <div class="section">
+        <h2>🌟 Warm Wishes</h2>
+        <p>
+            May the New Year bring happiness, peace, success, and endless
+            opportunities into your life. May every dream you hold come true.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>👀 From</h2>
+        <p>
+        Piyush Kumar Ray    
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>💬 Thought for the Year</h2>
+        <p>
+            “Every new beginning comes from some other beginning’s end.”
+        </p>
+    </div>
+
+    <footer>
+        ✨ Wishing you a bright and successful 2026 ✨
+    </footer>
+
+</div>
+
+</body>
+</html>
