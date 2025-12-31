@@ -1,2 +1,0 @@
-# Wishing-Card.com
-Card
